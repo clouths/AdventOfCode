@@ -122,7 +122,7 @@ func readPuzzle() (*Puzzle, error) {
 
 func seedsToSoils(puzzle *Puzzle) []int {
 	soils := []int{}
-	// checking one seedInfo at at time since it takes a lot of ram
+	// checking one seedInfo at at time since it takes a lot of ram and takes a long time (3m48.593s)
 	// improvement: run in parallel
 	// improvement2: don't load the whole range before iterating to save ram
 	for _, seedInfo := range puzzle.seedInfos {
